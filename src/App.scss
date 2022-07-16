@@ -1,0 +1,95 @@
+$primary1 : #FF6600;
+$primary2 : #00aa88;
+$background : #424242;
+*{
+  margin: 0;
+  padding: 0;
+}
+.highlight-p1{
+  color: $primary2;
+}
+body{
+  .App {
+    text-align: center;
+    background: $background;
+    min-height: 100vh;
+    background-image: url("./stripe.svg") ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+  .NavBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    div{
+      display: flex;
+      align-items: center;
+      img{
+        margin: 10px;
+
+      }
+      button{
+        margin: 10px;
+
+      }
+    }
+  }
+    .Landing{
+      display: flex;
+      min-height: 1000px;
+      justify-content: space-between;
+      color: white;
+      font-family: Hack;
+
+      .land-left{
+        margin: 50px;
+        margin-top: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .land-button{
+          margin-top: 100px;
+          button{
+            margin: 0 40px 0 0;
+          }
+        }
+        .name{
+          font-size: 200%;
+        }
+        h1{
+          font-size: 300%;
+          animation: fadeInFromTop 0.8s ease-in-out;
+
+          text-align: left;
+          color: white;
+        }
+      }
+      .land-right{
+        width: 1fr;
+
+        display: flex;
+        place-items: flex-end;
+        padding: 10px;
+        .Project{
+          animation: fadeInFromTop 0.8s ease-in-out;
+
+        }
+      }
+    }
+  }
+}
+@keyframes fadeInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-15%);
+  }
+  100% {
+    opacity: 100;
+
+    transform: translateY(0);
+  }
+}
+
+
+
